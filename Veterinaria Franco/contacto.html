@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="container-fluid"  id="app">
+        <header class="row">
+            <div class="encabezado col-12 d-flex justify-content-between">
+                <div>
+                    <img src="./assets/WhatsApp Image 2021-09-13 at 11.44.06.jpeg" alt="Veterinaria Franco" id="logo"
+                        width="100vh">
+                </div>
+                <div class="text-center">
+                    <h1>Veterinaria Franco</h1>
+                </div>
+                <div>
+                    <img src="./assets/silueta-del-perro-del-schnauzer-31038167.png" alt="silueta schnauzer"
+                        width="140vh">
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Comprar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./farmacia.html">Farmacia</a></li>
+                                    <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <form class="row g-3 justify-content-center">
+            <fieldset class="bg-info col-10">
+                <legend class="col-12 text-center">Contactenos!</legend>
+                <div class="col-md-12">
+                    <label for="id" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="id" placeholder="Sabrina Picos">
+                </div>
+                <div class="col-12">
+                    <label for="direccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Colón 1234">
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-6">
+                        <label for="provincia" class="form-label">Provincia</label>
+                        <input type="text" class="form-control" id="provincia">
+                    </div>
+                    <div class="col-md-5  offset-1">
+                        <label for="ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-md-5 offset-1">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="telefono">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-6">
+                        <label for="mascota" class="form-label">Mascota</label>
+                        <input type="text" class="form-control" id="mascota">
+                    </div>
+                    <div class="col-md-5  offset-1">
+                        <label for="raza" class="form-label">Raza</label>
+                        <input type="text" class="form-control" id="raza">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-5  offset-1">
+                        <label for="nombreMascota" class="form-label">Nombre Mascota</label>
+                        <input type="text" class="form-control" id="nombreMascota">
+                    </div>
+                    <div class="col-md-5  offset-1">
+                        <label for="edadMascota" class="form-label">Edad Mascota</label>
+                        <input type="text" class="form-control" id="edadMascota">
+                    </div>
+                </div>
+                <div class="p-2 d-flex justify-content-center">
+                    <textarea  class="col-8"name="message" rows="8" cols="30">
+                        Dejanos tu mensaje.
+                        </textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" @click="formularioEnviado">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="container-fluid mt-auto py-3 bg-dark">
+            <p class="bg-white">Río de Janeiro 300, Caballito, CABA, Argentina</p>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

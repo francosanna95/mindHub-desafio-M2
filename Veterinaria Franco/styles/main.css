@@ -1,0 +1,19 @@
+header{
+    background-image: url(../assets/background.jfif);}
+h1{
+    color:whitesmoke;
+    font-family: cursive;
+}
+body{background-image: url(../assets/Gsx2T7.jpg);}
+*
+{
+    font-family: Verdana;
+}
+.listaCarta{
+    height: 10vh;
+    }
+.rojo{background-color: tomato;}
+footer{
+    display: flex;
+    align-self: flex-end;}
+.estrella{background-color:cornflowerblue;}
